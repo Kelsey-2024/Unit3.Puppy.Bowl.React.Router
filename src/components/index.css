@@ -1,0 +1,8 @@
+#playerImg{
+  max-width: 190px;
+}
+
+#navbar{
+  display: flex;
+  justify-content: space-evenly;
+}
