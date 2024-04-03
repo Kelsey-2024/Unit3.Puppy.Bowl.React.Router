@@ -1,6 +1,6 @@
 # Puppy Bowl React Router
 
-##Professional Journal 4.3.24
+## Professional Journal 4.3.24
 - What am I struggling with so far in the boot camp? What do I feel successful at?
   Every day I'm realizing React Router is trickier to use than I expected. What confuses me the most is how similar the functionality is to HTML CSS and JavaScript, but with many many exceptions.
 - What can I do in this unit to get my closer to my career goals?
@@ -12,3 +12,6 @@
 - What did I learn from this workshop that I can use when searching for jobs or communicating with potential employers?
   Rereading my code and deciphering the bugs in them. Also, learning how to reorganize my code was extremely difficult yet rewarding.
 - What aspects of the last unit can I add to my resume? What are my strengths from that unit?
+
+## Netlify Link
+zippy-starship-1ac33e.netlify.app
