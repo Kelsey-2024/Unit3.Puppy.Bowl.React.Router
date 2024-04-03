@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import './index.css';
 
 const SinglePlayerCardDetails = ({ baseUrl }) => {
   const log = console.log;
@@ -23,10 +24,12 @@ const SinglePlayerCardDetails = ({ baseUrl }) => {
 
   return(
     <>
-      <p>{player.breed}</p>
-      <p>{`Field Status: ${player.status}`}</p> 
-      <br />
-      <button onClick={() => navigate("/")}>Go Back</button>
+      <div id="seeDetailsPage">
+        <p>{player.breed}</p>
+        <p>{`Field Status: ${player.status}`}</p> 
+        <br />
+        <button onClick={() => navigate("/allPlayers")}>Go Back</button>
+      </div>
     </>
   )
 }

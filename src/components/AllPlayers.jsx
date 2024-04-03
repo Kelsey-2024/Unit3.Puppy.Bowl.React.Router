@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import PlayerCard from './PlayerCard.jsx'
 import SinglePlayerCardDetails from './SinglePlayerCardDetails.jsx';
+import './index.css';
 
 const AllPlayers = ({baseUrl}) => {
   const [allPlayersList, setAllPlayersList] = useState([]);
@@ -25,12 +26,11 @@ const AllPlayers = ({baseUrl}) => {
     playerDetails.name 
     ? <SinglePlayerCardDetails /> 
     :
-    <>
-      <h3>AllPlayers Component</h3>
+    <> 
       <div>
         {
           allPlayersList.map((currentPlayer) => {
-          return <PlayerCard key={currentPlayer.id} currentPlayer={currentPlayer} setPlayerDetails={setPlayerDetails} />
+          return <PlayerCard key={currentPlayer.id} currentPlayer={currentPlayer} />
           })
         }
       </div> 

@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import './index.css';
 
-const PlayerCard = ({ currentPlayer, setPlayerDetails }) => {
+const PlayerCard = ({ currentPlayer }) => {
   const BASE_API_URL = `https://fsa-puppy-bowl.herokuapp.com/api/2402-FTB-ET-WEB-FT`;
   
+  // removed from state too
   // const handleClick = () => {
   //   setPlayerDetails(currentPlayer);
   // }
@@ -25,8 +26,7 @@ const PlayerCard = ({ currentPlayer, setPlayerDetails }) => {
       <div className="currentPlayerCard">
         <h3>{currentPlayer.name}</h3>
         <img id="playerImg" src={currentPlayer.imageUrl}/>
-        <Link to={`/player/${currentPlayer.id}`}>See Details</Link>
-        
+        <Link to={`/player/${currentPlayer.id}`}>See Details</Link>  
         <button onClick={puppyRemoval}>Adopt a Puppy!</button>
       </div>
     </>

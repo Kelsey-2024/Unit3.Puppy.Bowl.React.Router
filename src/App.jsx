@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar.jsx';
 import Home from './pages/Home.jsx';
 import AllPlayers from './components/AllPlayers.jsx';
@@ -21,7 +20,6 @@ function App() {
         <Route path='/additionalPlayerForm' element={<AddPlayerForm baseUrl={BASE_API_URL} />}></Route>
         <Route path='/player/:singlePlayerId' element={<SinglePlayerCardDetails baseUrl={BASE_API_URL}/>} />
       </Routes>
-      
     </>
   )
 }

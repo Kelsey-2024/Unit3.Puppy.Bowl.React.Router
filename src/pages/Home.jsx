@@ -1,8 +1,11 @@
 const Home = () => {
   return(
-    <section className='appPageStyling'>
-      <h1>Welcome to Puppy Bowl MMXXIV</h1>
-    </section>
+    <>
+      <section className='homePageStyling'>
+        <h1>Welcome to Puppy Bowl MMXXIV</h1>
+      </section>
+      <img id="homeImg"src="src/images/1LcnFUk_d.webp" />
+    </>
   )
 }
 
